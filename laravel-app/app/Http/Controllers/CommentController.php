@@ -31,6 +31,7 @@ class CommentController extends Controller
 
         $comment->save(); // Save the comment to the database
 
-        return redirect()->back()->with('success', 'Komentar berhasil ditambahkan.');with a success message
+        return redirect()->back()->with('success', 'Komentar berhasil ditambahkan.');
     }
 }
+
