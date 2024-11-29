@@ -16,7 +16,7 @@ class KelompokController extends Controller
 
         //Check apakah user sudah punya kelompok
         if ($user && $user->kelompok_id) {
-           return redirect()->back()->with('error', 'You already have a Team');
+           return redirect()->back()->with('error', 'Sudah mempunyai kelompok');
         }
 
         //Jika belum maka view ini muncul
@@ -45,6 +45,6 @@ class KelompokController extends Controller
             $user->save(); 
         }
 
-        return redirect()->route('home')->with('success', 'Kelompok berhasil dibuat dan Anda bergabung dengan kelompok tersebut.');
+        return redirect()->route('home')->with('success', 'Berhasil membuat kelompok');
     }
 }

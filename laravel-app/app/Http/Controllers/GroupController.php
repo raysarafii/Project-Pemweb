@@ -44,6 +44,6 @@ class KelompokController extends Controller
         $user->kelompok_id = $kelompok->kelompok_id;
         $user->save();
 
-        return redirect()->route('home')->with('success', 'Kelompok berhasil dibuat dan Anda bergabung dengan kelompok tersebut.');
+        return redirect()->route('home')->with('success', 'Kelompok berhasil dibuat');
     }
 }

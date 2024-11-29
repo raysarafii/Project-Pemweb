@@ -27,7 +27,7 @@ class TaskController extends Controller
 
     //Check user punya kelompok atau tidak
     if (is_null($user->kelompok_id)) {
-        return redirect()->back()->with('error', 'You doesnt have a team');
+        return redirect()->back()->with('error', 'Silahkan bergabung dengan kelompok');
     }
 
     //Fetch user semua user yg punya kelompok id sama
@@ -56,7 +56,7 @@ class TaskController extends Controller
         //Buat task baru
         Task::create($validatedData);
 
-        return redirect()->route('home')->with('success', 'Task created successfully.');
+        return redirect()->route('home')->with('success', 'Tugas berhasil dibuat');
     }
 
     public function show(Task $task)
@@ -84,6 +84,6 @@ public function update(Request $request, $task_id)
     $task = Task::findOrFail($task_id);
     $task->update($request->all());
 
-    return redirect()->route('home')->with('success', 'Task edit successfully.');
+    return redirect()->route('home')->with('success', 'Tugas berhasil di update');
 }
 }

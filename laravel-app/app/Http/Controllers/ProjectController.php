@@ -14,7 +14,7 @@ class ProjectController extends Controller
     {
         $user = Auth::user();
         if (is_null($user->kelompok_id)) {
-        return redirect()->back()->with('error', 'You doesnt have a team');
+        return redirect()->back()->with('error', 'Silahkan bergabung dengan kelompok');
     }
         $kelompok = $user && $user->kelompok_id ? Kelompok::find($user->kelompok_id) : null;
         return view('projects.create', compact('kelompok'));
@@ -38,7 +38,7 @@ class ProjectController extends Controller
         $project->user_id = Auth::id();
         $project->save();
 
-        return redirect()->route('home')->with('success', 'Project created successfully.');
+        return redirect()->route('home')->with('success', 'Project berhasil dibuat');
     }
 
     // Meythod show project
@@ -72,7 +72,7 @@ public function update(Request $request, Project $project)
     $project->update($request->all());
 
     
-    return redirect()->route('home')->with('success', "You have successfully updated your project");
+    return redirect()->route('home')->with('success', "Project berhasil di update");
 }
 
 
