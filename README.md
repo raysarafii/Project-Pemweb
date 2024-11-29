@@ -6,7 +6,6 @@
 
 ## 📚 Fitur Utama
 - **Kelompok**: Tambah, edit, dan hapus data kelompok.
-- **Users**: Manajemen pengguna dengan afiliasi kelompok.
 - **Projects**: Pengelolaan proyek untuk setiap kelompok.
 - **Tasks**: Membuat dan mengatur tugas dalam proyek.
 - **Comments**: Komentar pada tugas untuk diskusi lebih lanjut.
