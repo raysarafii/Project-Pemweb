@@ -32,6 +32,10 @@
         font-family: 'Nunito', sans-serif;
     }
 
+    body.auth-layout {
+        display: block; /* Layout tanpa grid untuk halaman login/register */
+    }
+
     .sidebar {
         background-color: #ffffff;
         color: #000;
@@ -99,8 +103,12 @@
         overflow-y: auto;
         background-color: #f8f9fa;
     }
-</style>
+   </style>
+</head>
 
+<body class="{{ Request::is('auth/login') || Request::is('auth/register') ? 'auth-layout' : '' }}">
+
+@if (!Request::is('auth/login') && !Request::is('auth/register'))
 <nav class="sidebar">
     <a class="navbar-brand" href="/home">
         <i class="fas fa-users"></i> Team Management
@@ -155,6 +163,7 @@
         @endguest
     </div>
 </nav>
+@endif
 
     <!-- Main Content -->
     <main class="main-content">
