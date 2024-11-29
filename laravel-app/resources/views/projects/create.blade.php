@@ -5,7 +5,7 @@
     <div class="col-md-8">
         <div class="card shadow border-0 rounded">
             <div class="card-body">
-                <h2 class="mb-3">Buat Proyek Baru</h2>
+                <h2 class="mb-3 text-center">Buat Proyek Baru</h2>
                 <p class="text-muted">Isi detail proyek baru Anda di bawah ini</p>
 
                 <!-- Form Start -->
