@@ -17,6 +17,7 @@
 - **Backend**: Laravel (PHP)
 - **Frontend**: Blade, CSS/JavaScript
 - **Database**: MySQL
+  - **Nama Database**: `team_management`
 - **Server Lokal**: XAMPP
 - **Build Tools**: npm
 
