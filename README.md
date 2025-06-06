@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="https://path-to-your/logo.png" alt="NutriTrack Logo" width="150"/>
+  <img src="https://ibb.co/rGZ9VhHZ" alt="NutriTrack Logo" width="150"/>
 
   <h1 align="center">NutriTrack - Pelacak Gula & Kalori</h1>
 
