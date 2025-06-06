@@ -32,7 +32,7 @@
 * **Backend**: Laravel 10
 * **Frontend**: Vue.js 3 (Composition API)
 * **Styling**: Tailwind CSS
-* **Database**: MySQL / MariaDB
+* **Database**: MySQL
 * **Development Tool**: Vite
 
 ---
